@@ -1,4 +1,4 @@
-# React with Redux (javascript version)
+# React with Redux (JavaScript version)
 
 ## Redux
 
