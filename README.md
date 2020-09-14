@@ -2,7 +2,7 @@
 
 ## Redux
 
-- What is Redux: it is global state store
+- What is Redux: Redux is a predictable state container for JavaScript apps.
 
 ## Initial Configuration
 
