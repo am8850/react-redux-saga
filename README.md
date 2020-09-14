@@ -1,4 +1,4 @@
-# React with Redux
+# React with Redux (javascript version)
 
 ## Redux
 
@@ -19,7 +19,7 @@ Steps:
 
 File: Index.js
 
-```typescript
+```javascript
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
@@ -58,7 +58,7 @@ serviceWorker.unregister();
 
 File: Reducer\counterReducer.js
 
-```typescript
+```javascript
 const counterReducer = (state=0,action) => {
     switch(action.type) {
         case 'INCREMENT': 
@@ -74,7 +74,7 @@ export default counterReducer;
 ```
 
 File: Reducer\loginReducer.js
-```typescript
+```javascript
 const loginReducer = (state=false, action) => {
     switch(action.type) {
         case 'SIGN_IN':
@@ -89,7 +89,7 @@ export default loggedReducer;
 
 File: Reducer\index.js
 
-```typescript
+```javascript
 import { combineReducers } from "redux";
 import counterReducer from "./counterReducer";
 import loggedReducer from "./loginReducer";
@@ -108,7 +108,7 @@ export default rootReducer;
 
 File: Actions\index.js
 
-```typescript
+```javascript
 export const increment = (nbr) => {
     return {
         type: 'INCREMENT',
@@ -125,7 +125,7 @@ export const decrement = () => {
 
 ## Sample Component:
 
-File: Counter.tsx
+File: Counter.js
 
 Steps:
 
@@ -134,7 +134,7 @@ Steps:
   - In this example the two actions are: increment and decrement functions
   - Notice that the increment function receives a parameter called the payload
 
-```typescript
+```javascript
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { increment, decrement } from "./actions";
